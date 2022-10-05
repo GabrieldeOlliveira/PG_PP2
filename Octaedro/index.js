@@ -201,7 +201,7 @@ var shaderProgram = createShaderProgram(
 var affIndex = gl.getUniformLocation(shaderProgram, "Affine");
 var positionIndex = gl.getAttribLocation(shaderProgram, "iPosition");
 var colorIndex = gl.getAttribLocation(shaderProgram, "iColor");
-var angle = (performance.now() / 1000 / 6) * 2* Math.PI;
+var angle = (performance.now() / 10000 / 6) * 5* Math.PI;
 
 function render() {
   // Precisa ser chamado periodicamente
